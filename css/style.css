@@ -1,0 +1,138 @@
+/* GENERAL Style */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+    /* From Figma */
+    /* Colors */
+    --Primary: #072ac8;
+    --PrimaryLight: #a2d6f9;
+    --PrimaryLighter: #d1edff;
+    --Secondary: #ffc600;
+    --SecondaryLight: #fce300;
+    --TerciaryLight: #f4f6fc;
+    --TerciaryDark: #292e47;
+    --Background: #F2F4FC;
+
+    /* Form */
+    --Wrong: #b33a3a;
+    --Right: #28a428;
+
+    /* Text */
+    --text-dark: #292e47;
+    --text-light: #6b708d;
+
+    /* Fonts */
+    --font-family: 'Roboto', sans-serif;
+
+    /* Font weights */
+    --font-weight-bold: 700;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+
+    /* Font sizes */
+    --font-size-h1: 60px;
+    --font-size-h2: 50px;
+    --font-size-h3: 40px;
+    --font-size-h4: 24px;
+    --font-size-body-intro: 24px;
+    --font-size-body-text: 20px;
+    --font-size-headline: 17px;
+    --font-size-caption1: 15px;
+    --font-size-caption2: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--Background);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------------- */
+/* COMPONENTS Styles */
+/* Header-Component */
+.header-component {}
+
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 40px 90px;
+    gap: 20px;
+    font-size: var(--font-size-headline);
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    color: var(--Primary);
+}
+
+/* Estilo de enlaces */
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hover */
+.nav-links a:hover {
+    text-decoration: underline;
+    color: var(--text-dark);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Botón */
+nav button {
+    background-color: var(--Primary);
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: var(--font-weight-medium);
+}
+
+nav button:hover {
+    color: var(--Secondary);
+}
+
+/* Footer-Component */
+
+/* Projects-Section-Component */
+
+/* EXTRA COMPONENTS Styles */
+/* Menu-Hamburger-Component */
+.menu-hamburger-component {
+    display: none;
+}
+
+/* Scroll-Up-Component */
+
+/* ----------------------------------------------------- */
+/* SECTIONS Styles */
+/* Hero-Section */
+
+/* Logos-Section */
+
+/* Testimonial-Section */
+
+/* Services-Section */
+
+/* Newsletter-Section */
+
+/* Contact-Section */
+/* Projects-Section */
