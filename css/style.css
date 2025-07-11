@@ -381,8 +381,7 @@ address {
 }
 
 .logo:hover {
-    animation: changeColor 0.5s ease-in-out forwards,
-        zoomIn 0.75s ease-in-out forwards;
+    animation: changeColor 0.5s ease-in-out forwards, zoomIn 0.75s ease-in-out forwards;
 }
 
 /* Testimonial-Section */
