@@ -1,1 +1,56 @@
 /* Media-Queries - RESPONSIVE Style */
+
+/* MOBILE */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo-circle {
+        order: 1;
+    }
+
+    .menu-hamburger-component {
+        display: block;
+        order: 2;
+        margin-left: auto;
+        z-index: 100;
+    }
+
+    .contact-us {
+        order: 3;
+        margin-left: 20px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 50%;
+        margin: 0 auto;
+        background-color: var(--TerciaryLight);
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        z-index: 90;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    /* Estado abierto */
+    #menu-toggle:checked ~ .nav-links {
+        max-height: 300px;
+        padding: 10px 0;
+    }
+
+    /* Estilos para los items del menú */
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+}
