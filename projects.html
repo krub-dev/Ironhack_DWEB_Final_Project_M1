@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <script src="./js/projects.js"></script>
     <div class="container-section">
         <!-- Header (Hardcoded for now. It's gonna be injected as a component)-->
         <div class="header-component">
@@ -20,76 +21,30 @@
                         <a href="./index.html"><img src="./assets/images/logos/circle.svg"
                                 alt="Circle Agency Logo" /></a>
                     </div>
-
-                    <!-- Input Checkbox Hamburger Menu -->
-                    <input type="checkbox" id="menu-toggle" />
-                    <label for="menu-toggle" class="menu-hamburger-component">
-                        <span></span>
-                    </label>
-
                     <ul class="nav-links">
                         <li><a href="./#">Home</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#services">Services</a></li>
                     </ul>
-
+                    <div class="menu-hamburger-component"></div>
                     <a class="contact-us" href="./contact.html">Contact Us</a>
                 </nav>
             </header>
         </div>
     </div>
+
     <main>
         <div class="container-section">
-            <!-- PLACEHOLDER FOR DEMO -->
             <!-- Section Projects (Dynamic, fetch endpoint) -->
             <section class="project-section">
-                <h1>Simplify</h1>
-                <h2>UI Design & App Development</h2>
-                <p class="date-completed">Completed on June 22, 2021</p>
-                <img class="project-image" src="./assets/images/projects-section/1.jpg" alt="Simplify" />
-                <p class="project-description">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et! Sunt qui
-                    esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat
-                    incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis
-                    ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua
-                    id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt quix duis ea quis id quis ad et. Sunt
-                    qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor
-                    cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
-                    <br><br>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt
-                    mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut
-                    voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore
-                    cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate
-                    aute id deserunt nisis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore
-                    cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate
-                    aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum
-                    minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id
-                    deserunt nis cillum minim tempor enim.</p>
             </section>
         </div>
+
         <div class="container-section">
-            <!-- PLACEHOLDER FOR DEMO -->
-            <!-- Section Projects - Recent Projects (Hardcode for now. It's gonna be dynamic, a component)-->
+            <!-- Section Projects - Recent Projects -->
             <section class="projects-section-component" id="other-projects">
                 <h2>Other Projects</h2>
                 <div class="projects-container">
-                    <div class="project-card">
-                        <img src="./assets/images/projects-section/2.jpg" alt="Dashcoin" />
-                        <h3>Dashcoin</h3>
-                        <p>Web Development</p>
-                        <a href="./projects.html">Learn more</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="./assets/images/projects-section/3.jpg" alt="Vectorify" />
-                        <h3>Vectorify</h3>
-                        <p>User Experience Design</p>
-                        <a href="./projects.html">Learn more</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="./assets/images/projects-section/1.jpg" alt="Simplify" />
-                        <h3>Lore ipsum</h3>
-                        <p>Lore Ipsum</p>
-                        <a href="./projects.html">Learn more</a>
-                    </div>
                 </div>
             </section>
         </div>
@@ -121,7 +76,7 @@
             </footer>
         </div>
     </div>
-    <script src="./js/projects.js"></script>
+    
     <script src="./js/components.js"></script>
 </body>
 

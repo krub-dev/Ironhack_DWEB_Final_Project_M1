@@ -61,9 +61,11 @@ body {
 .container-section {
     width: 100%;
     padding: 0 20px;
-    margin: 0 auto;
-    margin-bottom: 150px !important;
+    margin-top: 150px;
+}
 
+.no-margin-top {
+    margin-top: 0;
 }
 
 /* ----------------------------------------------------- */
@@ -572,14 +574,13 @@ address {
 
 .contact-section {
     max-width: 1200px;
-    padding: 60px 20px;
 }
 
 .contact-section h2 {
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h1);
     font-weight: var(--font-weight-bold);
     color: var(--text-dark);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: left;
 }
 
@@ -587,19 +588,30 @@ address {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
+    width: 100%;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
+    align-items: flex-start;
 }
 
+label {
+    margin: 0;
+}
+
+#form {
+    margin-top: 50px;
+}
 .form-group label {
     font-size: var(--font-size-caption1);
-    font-weight: 450;
-    text-align: left;
+    font-weight: 500;
     color: var(--text-light);
+    margin-bottom: 4px;
+    text-align: left;
 }
 
 .form-group input,
@@ -607,21 +619,30 @@ address {
     padding: 15px 20px;
     font-size: 0.9rem;
     text-align: left;
-    ;
     font-family: var(--font-family);
-    background-color: vat(PrimaryLighter);
+    background-color: rgba(107, 112, 141, 0.1);
     transition: all 0.3s ease;
+    outline: none;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    outline: none;
     border-color: var(--Primary);
 }
 
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    width: 100%;
 }
 
 .btn {
@@ -639,8 +660,9 @@ address {
 }
 
 .btn:hover {
-    color: var(--Secondary)
+    color: var(--Secondary);
 }
+
 
 /* Services-Section & Projects-Section-Component */
 .services-section {
