@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found 404 | Circle Agency</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" href="assets/images/favicon/circle-icon.png" type="image/png">
+</head>
+
+<body>
+    <div class="container-section no-margin-top no-margin-bottom">
+        <!-- Header Component (Injected) -->
+        <div class="header-component">
+        </div>
+    </div>
+
+    <main class="error-404">
+        <div class="container-section no-margin-top">
+            <!-- Error 404 Section -->
+            <section class="error-404-section">
+                <h2 class="error-404">Oops!</h2>
+                <h1>404</h1>
+                <p>The page you're looking for doesn't exist or has been moved.</p>
+                <img src="./assets/images/404/404-m-scott.gif" alt="Gif 404" class="error-gif">
+                <a href="./index.html" class="btn-404">Return to Homepage</a>
+            </section>
+        </div>
+    </main>
+
+    <div class="container-section margin-bottom">
+        <!-- Footer Component (Injected) -->
+        <div class="footer-component">
+        </div>
+    </div>
+
+    <script src="./js/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadHeader();
+            loadFooter();
+        });
+    </script>
+</body>
+
+</html>

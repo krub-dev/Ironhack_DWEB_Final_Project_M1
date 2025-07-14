@@ -64,8 +64,21 @@ body {
     margin-top: 150px;
 }
 
+/* Margin Utilities - Sections */
 .no-margin-top {
     margin-top: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom {
+    margin-bottom: 60px;
+}
+
+.margin-top {
+    margin-top: 60px;
 }
 
 /* ----------------------------------------------------- */
@@ -270,15 +283,22 @@ address {
     position: fixed;
     z-index: 1000;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     cursor: pointer;
     animation: scrollUp 2.5s ease infinite;
 }
 
-/* ----------------------------------------------------- */
-/* SECTIONS Styles */
-/* Hero-Section */
+.scroll-up-component img {
+    width: 65%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
 
+
+/* ----------------------------------------------------- */
+/* SECTIONS */
+/* Hero-Section */
 .hero-section {
     display: flex;
     flex-flow: row wrap;
@@ -387,7 +407,6 @@ address {
 }
 
 /* Testimonial-Section */
-
 .testimonial-section {
     position: relative;
     max-width: 1200px;
@@ -606,6 +625,7 @@ label {
 #form {
     margin-top: 50px;
 }
+
 .form-group label {
     font-size: var(--font-size-caption1);
     font-weight: 500;
@@ -663,6 +683,29 @@ label {
     color: var(--Secondary);
 }
 
+/* Errors Form */
+.error {
+    margin: 0;
+    margin-left: 10px;
+    ;
+    display: none;
+    color: var(--Wrong);
+    font-size: 0.9em;
+    line-height: 1.2;
+    width: 100%;
+    text-align: left;
+}
+
+.error.show {
+    display: block;
+    text-align: left;
+}
+
+/* Input Error */
+.input-error {
+    border: 2px solid var(--Wrong) !important;
+    outline: none;
+}
 
 /* Services-Section & Projects-Section-Component */
 .services-section {
@@ -776,6 +819,39 @@ label {
 
 .service-card h3 {
     margin-top: 120px;
+}
+
+/* Error-404-Section */
+.error-404-section {
+    text-align: center;
+    background-color: var(--Secondary);
+    border-radius: 4px;
+    max-width: 600px;
+    max-height: 700px;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.error-404 h1 {
+    font-size: 6rem;
+    color: var(--Primary);
+    margin-bottom: 10px;
+}
+
+.error-404 p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-404 {
+    display: block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background: var(--Primary);
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    width: 200px;
 }
 
 /* Animations */
