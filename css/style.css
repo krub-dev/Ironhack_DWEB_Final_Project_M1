@@ -148,8 +148,6 @@ nav button:hover {
 }
 
 /* Footer-Component */
-.footer-component {}
-
 .footer-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -164,7 +162,6 @@ nav button:hover {
 address {
     font-style: normal;
     width: 30ch;
-    ;
     font-weight: var(--font-weight-regular);
     color: var(--text-dark);
 }
@@ -194,6 +191,11 @@ address {
     margin: 0 auto;
 }
 
+.project-card {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .project-section h1 {
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-bold);
@@ -219,7 +221,6 @@ address {
 
 .project-image {
     width: 100%;
-    height: auto;
     filter: drop-shadow(5px 5px 20px rgba(183, 29, 189, 0.5));
 }
 
@@ -297,7 +298,6 @@ address {
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 }
 
-
 /* ----------------------------------------------------- */
 /* SECTIONS */
 /* Hero-Section */
@@ -310,6 +310,7 @@ address {
 .hero-content {
     flex: 1;
     min-width: 65ch;
+    margin-bottom: 50px;
     color: var(--text-dark);
 }
 
@@ -394,6 +395,8 @@ address {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     align-items: center;
+    justify-items: center;
+    gap: 30px;
 }
 
 .logo {

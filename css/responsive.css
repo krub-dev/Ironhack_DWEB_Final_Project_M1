@@ -61,7 +61,7 @@
     /* Menú Unfolded (bottom icon) */
     .nav-links {
         position: absolute;
-        top: 100%; 
+        top: 100%;
         left: 65%;
         width: 200px;
         background-color: var(--Primary);
@@ -73,12 +73,13 @@
         list-style: none;
         margin: 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        opacity: 0; 
-        visibility: hidden; /* At first */
+        opacity: 0;
+        visibility: hidden;
+        /* At first */
         border-radius: 0 0 8px 8px;
     }
 
-    #menu-toggle:checked ~ .nav-links {
+    #menu-toggle:checked~.nav-links {
         opacity: 1;
         visibility: visible;
     }
@@ -102,15 +103,33 @@
     /* Hero Section */
     .hero-section {
         flex-direction: column;
+        align-items: center;
     }
 
     .hero-content,
     .hero-image {
-        width: 100% !important;
+        max-width: 90%;
+        min-width: 35ch;
+        margin: 0 auto;
     }
 
     .hero-content h1 {
         font-size: 2rem !important;
+    }
+
+    .hero-image {
+        order: 1;
+        margin-top: 50px;
+    }
+
+    .person-wrapper {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .floating-card {
+        width: 150px;
     }
 
     /* Grids */
@@ -126,6 +145,21 @@
         grid-template-columns: 1fr !important;
     }
 
+    /* Logos */
+    .logos-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logos-container img:nth-child(4) {
+        grid-column: 1;
+    }
+
+    .logos-container img:nth-child(5) {
+        grid-column: 3;
+    }
+
     /* Testimonials */
     .testimonial-section q {
         width: 90% !important;
@@ -134,6 +168,54 @@
     .emojis-container img {
         width: 50px !important;
         height: 50px !important;
+    }
+
+    /* Newsletter */
+    #newsletter {
+        line-height: 1;
+        padding: 50px;
+    }
+
+    .newsletter-section h3 {
+        font-size: 1.5rem !important;
+        margin: 25px;
+    }
+
+    .newsletter-section {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .newsletter-section input {
+        margin-bottom: 15px;
+    }
+
+    /* Footer */
+    .footer-section {
+        grid-template-columns: 1fr;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .footer-links ul {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 10px;
+        text-align: left;
+    }
+
+    .footer-content address {
+        margin: 0 auto;
+    }
+
+    .footer-content address p {
+        text-align: center;
+    }
+
+    /* Scroll-Up-Component */
+    .scroll-up-component {
+        right: -25px;
     }
 }
 
